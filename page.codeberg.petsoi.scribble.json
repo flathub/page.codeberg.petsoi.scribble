@@ -30,7 +30,7 @@
                 {
                     "type": "archive",
                     "url": "https://codeberg.org/petsoi/scribble/archive/v1.12.0.tar.gz",
-                    "sha256": "4d99a1101878d977784c7fe8d039fd0a527611dabe507faf22e1411fb93aaa50"
+                    "sha256": "803631f57cca45dad0b207fefdfd172dd90aea2f06f85988b82398b5c9b572a8"
                 },
                 "cargo-sources.json",
                 {
