@@ -4,30 +4,33 @@
     "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.rust-stable"
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.llvm22"
     ],
     "command": "scribble",
     "finish-args": [
         "--socket=fallback-x11",
         "--env=GSK_RENDERER=gl",
         "--socket=wayland",
+        "--socket=pulseaudio",
         "--device=dri",
         "--share=ipc",
         "--filesystem=~/Scribble Documents:create",
-        "--filesystem=xdg-pictures"
+        "--filesystem=xdg-pictures:ro"
     ],
     "modules": [
         {
             "name": "scribble",
             "buildsystem": "meson",
             "build-options": {
+                "append-ld-library-path": "/usr/lib/sdk/llvm22/lib",
                 "append-path": "/usr/lib/sdk/rust-stable/bin"
             },
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://codeberg.org/petsoi/scribble/archive/v1.11.0.tar.gz",
-                    "sha256": "0ae55196b725eaef3af0965edb3bedfe5aa54703c42281dc9e42b8d425a1de9e"
+                    "url": "https://codeberg.org/petsoi/scribble/archive/v1.12.0.tar.gz",
+                    "sha256": "4d99a1101878d977784c7fe8d039fd0a527611dabe507faf22e1411fb93aaa50"
                 },
                 "cargo-sources.json",
                 {
