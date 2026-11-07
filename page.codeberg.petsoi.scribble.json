@@ -29,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://codeberg.org/petsoi/scribble/archive/v1.12.2.tar.gz",
-                    "sha256": "a7f69df8e03910ad1877a05af8d08ed060008b4718b06d2ec19d8f6dbe007cad"
+                    "url": "https://codeberg.org/petsoi/scribble/archive/v1.12.3.tar.gz",
+                    "sha256": "0de85f234210136c4db3e9634dd2b5c89004c6cf8506e2f16199b9c1ad4b042f"
                 },
                 "cargo-sources.json",
                 {
